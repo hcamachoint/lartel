@@ -16,7 +16,7 @@ Route::get('/', function () {
     $botId = $response->getId();
     $firstName = $response->getFirstName();
     $username = $response->getUsername();
-    return view('welcome', ['response' => $response, 'botName' => $firstName, 'botId' => $botId]);
+    return view('welcome', ['response' => $response, 'botName' => $firstName, 'username' => $username]);
 });
 
 Route::get('/sethook', function () {

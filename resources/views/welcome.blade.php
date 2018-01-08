@@ -80,7 +80,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     <b>Id:</b> {{$botId}}
-                    <b>Nombre:</b> {{$botName}}
+                    <b>Username:</b> {{$username}}
                 </div>
 
                 <div class="links">
