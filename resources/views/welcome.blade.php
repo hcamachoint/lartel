@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <b>Id:</b> {{botId}}
+                    <b>Id:</b> {{$botId}}
                     <b>Nombre:</b> {{$botName}}
                 </div>
 
