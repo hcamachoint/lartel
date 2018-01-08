@@ -28,6 +28,11 @@ Route::get('/sethook', function () {
   return $response;
 });
 
+Route::get('/unsethook', function () {
+  $response = Telegram::removeWebhook();
+  return $response;
+});
+
 Route::post('/<token>/webhook', function () {
     $updates = Telegram::getWebhookUpdates();
 
