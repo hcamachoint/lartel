@@ -81,7 +81,7 @@
                 <div class="title m-b-md">
                     <h2>Telegram bot & Laravel</h2>
                     <b>Id:</b> {{$botId}}<br>
-                    <b>Username:</b> @{{$username}}
+                    <b>Username:</b> {{$username}}
                 </div>
             </div>
         </div>
