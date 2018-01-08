@@ -16,5 +16,15 @@ Route::get('/', function () {
 });
 
 Route::get('/home', function () {
-    return view('home');
+  $response = Telegram::getMe();
+  $botId = $response->getId();
+  $firstName = $response->getFirstName();
+  $username = $response->getUsername();
+    return view('home', ['response' => $response, 'botName' => $firstName]);
+});
+
+Route::post('/<token>/webhook', function () {
+    $updates = Telegram::getWebhookUpdates();
+
+    return 'ok';
 });
