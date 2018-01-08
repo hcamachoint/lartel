@@ -79,8 +79,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <b>Id:</b> {{$botId}}
-                    <b>Username:</b> {{$username}}
+                    <h2>Telegram bot & Laravel</h2>
+                    <b>Id:</b> {{$botId}}<br>
+                    <b>Username:</b> @{{$username}}
                 </div>
             </div>
         </div>
