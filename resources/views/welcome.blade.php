@@ -79,7 +79,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <b>Id:</b> {{botId}}
+                    <b>Nombre:</b> {{$botName}}
                 </div>
 
                 <div class="links">

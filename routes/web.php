@@ -12,15 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', function () {
-  $response = Telegram::getMe();
-  $botId = $response->getId();
-  $firstName = $response->getFirstName();
-  $username = $response->getUsername();
-    return view('home', ['response' => $response, 'botName' => $firstName]);
+    $response = Telegram::getMe();
+    $botId = $response->getId();
+    $firstName = $response->getFirstName();
+    $username = $response->getUsername();
+    return view('welcome', ['response' => $response, 'botName' => $firstName, 'botId' => $botId]);
 });
 
 Route::get('/sethook', function () {
