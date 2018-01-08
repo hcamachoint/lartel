@@ -25,7 +25,7 @@ Route::get('/home', function () {
 
 Route::get('/set', funtion(){
     // Don't forget to setup a POST route in your Laravel Project.
-  $response = Telegram::setWebhook(['url' => 'http://lartel.herokuapp.com/<token>/webhook']);
+  $response = Telegram::setWebhook(['url' => 'https://example.com/<token>/webhook']);
 });
 
 Route::post('/<token>/webhook', function () {
