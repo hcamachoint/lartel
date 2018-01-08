@@ -24,7 +24,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/sethook', function () {
-  $response = Telegram::setWebhook(['url' => 'http://lartel.herokuapp.com/<token>/webhook']);
+  $response = Telegram::setWebhook(['url' => 'https://lartel.herokuapp.com/<token>/webhook']);
 });
 
 Route::post('/<token>/webhook', function () {
